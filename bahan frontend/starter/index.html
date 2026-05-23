@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="AgroBot - Konsultan AI Pertanian & Perkebunan. Dapatkan diagnosis OPT, rekomendasi hama terpadu, dan edukasi agronomi untuk lahan Anda."/>
+  <title>AgroBot - Konsultan AI Pertanian & Perkebunan</title>
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="app-background"></div>
+  <div class="chat-container" id="main-chat-container">
+    <header class="chat-header" id="chat-header-section">
+      <div class="header-logo">
+        <span class="logo-icon">🌱</span>
+        <div class="logo-details">
+          <h2>AgroBot</h2>
+          <span class="status-indicator">Konsultan Pertanian & Perkebunan</span>
+        </div>
+      </div>
+      <button class="clear-btn" id="clear-chat-btn" title="Mulai Percakapan Baru">
+        <span class="clear-icon">🔄</span>
+      </button>
+    </header>
+
+    <main class="chat-box" id="chat-box-area">
+      <!-- Welcome message -->
+      <div class="message bot welcome-message" id="welcome-msg-element">
+        <div class="message-content">
+          Halo! Saya **AgroBot**, asisten AI agronomi Anda. 🌾
+
+Saya siap membantu Anda mendiagnosis kerusakan tanaman, mengidentifikasi hama & penyakit, serta merekomendasikan solusi pengendalian hama terpadu (PHT).
+
+Kirim foto tanaman yang bermasalah, dokumen PDF laporan lahan, atau ketik langsung keluhan Anda — saya akan merespons dalam Bahasa Indonesia yang mudah dipahami.
+
+Pertanian Anda, prioritas saya! 🚜
+        </div>
+      </div>
+    </main>
+
+    <footer class="chat-footer" id="chat-footer-section">
+      <!-- File Preview Container -->
+      <div class="file-preview-container hidden" id="file-preview-box">
+        <div class="preview-content" id="preview-content-element">
+          <span class="file-icon" id="preview-file-icon">📄</span>
+          <span class="file-name" id="preview-file-name">file_name.pdf</span>
+        </div>
+        <button type="button" class="remove-file-btn" id="remove-file-btn" title="Hapus file">✖</button>
+      </div>
+
+      <form id="chat-form" class="chat-form-layout">
+        <!-- Hidden file input -->
+        <input type="file" id="file-upload-input" class="hidden" accept="image/*,application/pdf,audio/*,text/*" />
+        
+        <button type="button" class="upload-trigger-btn" id="upload-trigger-btn" title="Unggah Gambar, Dokumen, atau Audio">
+          <span class="upload-icon">📎</span>
+        </button>
+
+        <input type="text" id="user-input" placeholder="Ketik pesan Anda di sini..." autocomplete="off" required />
+        
+        <button type="submit" class="send-btn" id="send-chat-btn">
+          <span class="send-icon">➔</span>
+        </button>
+      </form>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

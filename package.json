@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "@google/genai": "^2.6.0",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "multer": "^2.1.1"
+  },
+  "name": "hactiv8",
+  "version": "1.0.0",
+  "description": "AgroBot - AI agronomis konsultan perlindungan tanaman dan perkebunan kelapa sawit",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js",
+    "dev": "npx nodemon"
+  },
+  "keywords": ["agrobot", "agriculture", "ai", "chatbot", "gemini", "palm-oil", "pest-control"],
+  "author": "",
+  "license": "ISC",
+  "type": "module"
+}
