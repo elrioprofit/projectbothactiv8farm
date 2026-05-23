@@ -92,15 +92,6 @@ HACTIV8/
 | **UI** | Glassmorphism, responsive, markdown rendering |
 | **Error Handling** | Global middleware + file size limit 10MB |
 
-## .gitignore (Rahasia yang Dilindungi)
-
-```
-.env               ← API key, JANGAN di-commit!
-node_modules/      ← besar, regenerate dengan npm install
-package-lock.json  ← regenerate
-*.zip              ← backup file
-```
-
 ## Catatan Pengembangan
 
 - Semua dependencies wajib ada di `package.json` (bukan hanya ter-install)
